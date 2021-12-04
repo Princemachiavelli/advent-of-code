@@ -1,0 +1,33 @@
+day, year, type1, type2
+1, 2021, list/int manipulation
+1, 2020, list/int manipulation
+1, 2019, list/int manipulation
+1, 2018, list/string manipulation
+1, 2017, sequence/string search?
+
+2, 2021, list/string processing
+2, 2020, list/string processing harder
+2, 2019, Intcode, list processing
+2, 2018, list/string processing like 2020
+
+3, 2021, list/string processing, very wordy, like 2020 5 & 6
+3, 2020, text map navigation
+3, 2019, list map navigation
+3, 2018, text grid calculation
+
+4, 2021, ???
+4, 2020, string proc., constraint
+4, 2019, constraint solution finding
+4, 2018, constraint solution finding, string processing, very wordy
+4, 2017, constraint solution finding
+
+5, 2021, ????
+5, 2020, binary tree, string processing
+5, 2019, Intcode parameter modes
+5, 2018, similar to an intcode problem, sequence program
+5, 2017, turing machine/intcode like problem
+
+6, 2021, ???
+6, 2020, string list grouping and constraint problem
+6, 2019, graph construction?, list map
+7, 2018, list map, optimisation, math
