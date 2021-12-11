@@ -1,0 +1,48 @@
+
+    digraph G {
+        nodesep=.1;
+        ranksep=.1;
+        rankdir=LR;
+        node [penwidth="0.5", shape=box, width=.1, height=.1];
+
+    
+{ rank=same;
+// FRAME globals
+node139784282166904 [margin="0.03", color="#444443", fontcolor="#444443", fontname="Helvetica", style=filled, fillcolor="#D9E6F5", label=<<table BORDER="0" CELLPADDING="0" CELLBORDER="1" CELLSPACING="0">
+<tr><td cellspacing="0" colspan="3" cellpadding="0" bgcolor="#D9E6F5" border="1" sides="b" align="center"><font color="#444443" FACE="Times-Italic" point-size="11">globals</font></td></tr>
+<tr><td colspan="3" cellpadding="1" border="0" bgcolor="#D9E6F5"></td></tr><tr><td cellspacing="0" cellpadding="0" border="0"><font point-size="9"> ... </font></td></tr>
+</table>
+>];
+// FRAME part2
+node139784269919240 [margin="0.03", color="#444443", fontcolor="#444443", fontname="Helvetica", style=filled, fillcolor="#D9E6F5", label=<<table BORDER="0" CELLPADDING="0" CELLBORDER="1" CELLSPACING="0">
+<tr><td cellspacing="0" colspan="3" cellpadding="0" bgcolor="#D9E6F5" border="1" sides="b" align="center"><font color="#444443" FACE="Times-Italic" point-size="11">part2</font></td></tr>
+<tr><td colspan="3" cellpadding="1" border="0" bgcolor="#D9E6F5"></td></tr><tr><td port="s_label" cellspacing="0" cellpadding="0" bgcolor="#D9E6F5" border="1" sides="r" align="right"><font face="Helvetica" color="#444443" point-size="11">s </font></td>
+<td cellspacing="0" cellpadding="0" border="0"></td><td port="s" cellspacing="0" cellpadding="1" bgcolor="#D9E6F5" border="0" align="left"><font color="#444443" point-size="11"> '5,5 '</font></td>
+</tr>
+<tr><td colspan="3" cellpadding="1" border="0" bgcolor="#D9E6F5"></td></tr><tr><td port="e_label" cellspacing="0" cellpadding="0" bgcolor="#D9E6F5" border="1" sides="r" align="right"><font face="Helvetica" color="#444443" point-size="11">e </font></td>
+<td cellspacing="0" cellpadding="0" border="0"></td><td port="e" cellspacing="0" cellpadding="1" bgcolor="#D9E6F5" border="0" align="left"><font color="#444443" point-size="11"> ' 8,2'</font></td>
+</tr>
+<tr><td colspan="3" cellpadding="1" border="0" bgcolor="#D9E6F5"></td></tr><tr><td port="x1_label" cellspacing="0" cellpadding="0" bgcolor="#D9E6F5" border="1" sides="r" align="right"><font face="Helvetica" color="#444443" point-size="11">x1 </font></td>
+<td cellspacing="0" cellpadding="0" border="0"></td><td port="x1" cellspacing="0" cellpadding="1" bgcolor="#D9E6F5" border="0" align="left"><font color="#444443" point-size="11"> 5</font></td>
+</tr>
+<tr><td colspan="3" cellpadding="1" border="0" bgcolor="#D9E6F5"></td></tr><tr><td port="y1_label" cellspacing="0" cellpadding="0" bgcolor="#D9E6F5" border="1" sides="r" align="right"><font face="Helvetica" color="#444443" point-size="11">y1 </font></td>
+<td cellspacing="0" cellpadding="0" border="0"></td><td port="y1" cellspacing="0" cellpadding="1" bgcolor="#D9E6F5" border="0" align="left"><font color="#444443" point-size="11"> 5</font></td>
+</tr>
+<tr><td colspan="3" cellpadding="1" border="0" bgcolor="#D9E6F5"></td></tr><tr><td port="x2_label" cellspacing="0" cellpadding="0" bgcolor="#D9E6F5" border="1" sides="r" align="right"><font face="Helvetica" color="#444443" point-size="11">x2 </font></td>
+<td cellspacing="0" cellpadding="0" border="0"></td><td port="x2" cellspacing="0" cellpadding="1" bgcolor="#D9E6F5" border="0" align="left"><font color="#444443" point-size="11"> 8</font></td>
+</tr>
+<tr><td colspan="3" cellpadding="1" border="0" bgcolor="#D9E6F5"></td></tr><tr><td port="y2_label" cellspacing="0" cellpadding="0" bgcolor="#D9E6F5" border="1" sides="r" align="right"><font face="Helvetica" color="#444443" point-size="11">y2 </font></td>
+<td cellspacing="0" cellpadding="0" border="0"></td><td port="y2" cellspacing="0" cellpadding="1" bgcolor="#D9E6F5" border="0" align="left"><font color="#444443" point-size="11"> 2</font></td>
+</tr>
+<tr><td colspan="3" cellpadding="1" border="0" bgcolor="#D9E6F5"></td></tr><tr><td port="xm_label" cellspacing="0" cellpadding="0" bgcolor="#D9E6F5" border="1" sides="r" align="right"><font face="Helvetica" color="#444443" point-size="11">xm </font></td>
+<td cellspacing="0" cellpadding="0" border="0"></td><td port="xm" cellspacing="0" cellpadding="1" bgcolor="#D9E6F5" border="0" align="left"><font color="#444443" point-size="11"> 1</font></td>
+</tr>
+<tr><td colspan="3" cellpadding="1" border="0" bgcolor="#D9E6F5"></td></tr><tr><td port="ym_label" cellspacing="0" cellpadding="0" bgcolor="#D9E6F5" border="1" sides="r" align="right"><font face="Helvetica" color="#444443" point-size="11">ym </font></td>
+<td cellspacing="0" cellpadding="0" border="0"></td><td port="ym" cellspacing="0" cellpadding="1" bgcolor="#D9E6F5" border="0" align="left"><font color="#444443" point-size="11"> -1</font></td>
+</tr>
+</table>
+>];
+node139784282166904 -> node139784269919240 [style=invis, weight=100]
+}
+
+}

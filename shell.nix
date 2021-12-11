@@ -7,6 +7,12 @@ let
       flake8
       graphviz
       pynvim
+      line_profiler
+      snakeviz
+      lolviz
+      sympy
+      scipy
+      numpy
     ]
   );
 
@@ -61,6 +67,12 @@ let
     ${getDayScriptPart "run"}
 
     ${watchexec}/bin/watchexec -r "${pypy3}/bin/pypy3 ./$day.py"
+  '';
+  
+  profileScript = writeShellScriptBin "prun" ''
+    ${getDayScriptPart "run"}
+
+    ${watchexec}/bin/watchexec -r "${py3WithPackages}/bin/kernprof -v -l ./$day.py"
   '';
 
   debugRunScript = writeShellScriptBin "drun" ''
@@ -151,6 +163,7 @@ let
   );
 in
 mkShell {
+  PYTHONPATH="${py3WithPackages}/${py3WithPackages.sitePackages}";
   shellHook = ''
     mkdir -p .vim
     ln -sf ${cocConfig} .vim/coc-settings.json
@@ -183,12 +196,14 @@ mkShell {
     py3WithPackages
     py3WithPackages.pkgs.black
     py3WithPackages.pkgs.flake8
+    py3WithPackages.pkgs.line_profiler
     pypy3
 
     # Utilities
     cRunScript
     cRunTestScript
     testRunScript
+    profileScript
     debugRunScript
     debugRunNoTestScript
     debugSingleRunScript

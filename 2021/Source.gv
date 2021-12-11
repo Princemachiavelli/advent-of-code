@@ -1,0 +1,620 @@
+
+    digraph G {
+        nodesep=.1;
+        ranksep=.1;
+        rankdir=LR;
+        node [penwidth="0.5", shape=box, width=.1, height=.1];
+
+    
+{ rank=same;
+// FRAME globals
+node140091871958648 [margin="0.03", color="#444443", fontcolor="#444443", fontname="Helvetica", style=filled, fillcolor="#D9E6F5", label=<<table BORDER="0" CELLPADDING="0" CELLBORDER="1" CELLSPACING="0">
+<tr><td cellspacing="0" colspan="3" cellpadding="0" bgcolor="#D9E6F5" border="1" sides="b" align="center"><font color="#444443" FACE="Times-Italic" point-size="11">globals</font></td></tr>
+<tr><td colspan="3" cellpadding="1" border="0" bgcolor="#D9E6F5"></td></tr><tr><td cellspacing="0" cellpadding="0" border="0"><font point-size="9"> ... </font></td></tr>
+</table>
+>];
+// FRAME part2
+node140091868239792 [margin="0.03", color="#444443", fontcolor="#444443", fontname="Helvetica", style=filled, fillcolor="#D9E6F5", label=<<table BORDER="0" CELLPADDING="0" CELLBORDER="1" CELLSPACING="0">
+<tr><td cellspacing="0" colspan="3" cellpadding="0" bgcolor="#D9E6F5" border="1" sides="b" align="center"><font color="#444443" FACE="Times-Italic" point-size="11">part2</font></td></tr>
+<tr><td colspan="3" cellpadding="1" border="0" bgcolor="#D9E6F5"></td></tr><tr><td port="O_label" cellspacing="0" cellpadding="0" bgcolor="#D9E6F5" border="1" sides="r" align="right"><font face="Helvetica" color="#444443" point-size="11">O </font></td>
+<td cellspacing="0" cellpadding="0" border="0"></td><td port="O" cellspacing="0" cellpadding="1" bgcolor="#D9E6F5" border="0" align="left"><font color="#444443" point-size="11"> 12</font></td>
+</tr>
+<tr><td colspan="3" cellpadding="1" border="0" bgcolor="#D9E6F5"></td></tr><tr><td port="G_label" cellspacing="0" cellpadding="0" bgcolor="#D9E6F5" border="1" sides="r" align="right"><font face="Helvetica" color="#444443" point-size="11">G </font></td>
+<td cellspacing="0" cellpadding="0" border="0"></td><td port="G" cellspacing="0" cellpadding="1" bgcolor="#D9E6F5" border="0" align="left"><font color="#444443" point-size="11">    </font></td>
+</tr>
+</table>
+>];
+node140091871958648 -> node140091868239792 [style=invis, weight=100]
+}
+
+// DICT
+node140091875499112 [margin="0.03", color="#444443", fontcolor="#444443", fontname="Helvetica", style=filled, fillcolor="#fefecd", label=<<table BORDER="0" CELLPADDING="0" CELLBORDER="1" CELLSPACING="0">
+<tr><td port="0_label" cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="0" align="right"><font face="Helvetica" color="#444443" point-size="11">(0, 9) </font></td>
+<td cellpadding="0" border="0" valign="bottom"><font color="#444443" point-size="9">&rarr;</font></td><td port="0" cellspacing="0" cellpadding="1" bgcolor="#fefecd" border="0" align="left"><font color="#444443" point-size="11"> 2</font></td>
+</tr>
+<tr><td colspan="3" cellpadding="1" border="0" bgcolor="#fefecd"></td></tr><tr><td port="1_label" cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="0" align="right"><font face="Helvetica" color="#444443" point-size="11">(1, 9) </font></td>
+<td cellpadding="0" border="0" valign="bottom"><font color="#444443" point-size="9">&rarr;</font></td><td port="1" cellspacing="0" cellpadding="1" bgcolor="#fefecd" border="0" align="left"><font color="#444443" point-size="11"> 2</font></td>
+</tr>
+<tr><td colspan="3" cellpadding="1" border="0" bgcolor="#fefecd"></td></tr><tr><td port="2_label" cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="0" align="right"><font face="Helvetica" color="#444443" point-size="11">(2, 9) </font></td>
+<td cellpadding="0" border="0" valign="bottom"><font color="#444443" point-size="9">&rarr;</font></td><td port="2" cellspacing="0" cellpadding="1" bgcolor="#fefecd" border="0" align="left"><font color="#444443" point-size="11"> 2</font></td>
+</tr>
+<tr><td colspan="3" cellpadding="1" border="0" bgcolor="#fefecd"></td></tr><tr><td port="3_label" cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="0" align="right"><font face="Helvetica" color="#444443" point-size="11">(3, 9) </font></td>
+<td cellpadding="0" border="0" valign="bottom"><font color="#444443" point-size="9">&rarr;</font></td><td port="3" cellspacing="0" cellpadding="1" bgcolor="#fefecd" border="0" align="left"><font color="#444443" point-size="11"> 1</font></td>
+</tr>
+<tr><td colspan="3" cellpadding="1" border="0" bgcolor="#fefecd"></td></tr><tr><td port="4_label" cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="0" align="right"><font face="Helvetica" color="#444443" point-size="11">(4, 9) </font></td>
+<td cellpadding="0" border="0" valign="bottom"><font color="#444443" point-size="9">&rarr;</font></td><td port="4" cellspacing="0" cellpadding="1" bgcolor="#fefecd" border="0" align="left"><font color="#444443" point-size="11"> 1</font></td>
+</tr>
+<tr><td colspan="3" cellpadding="1" border="0" bgcolor="#fefecd"></td></tr><tr><td port="5_label" cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="0" align="right"><font face="Helvetica" color="#444443" point-size="11">(5, 9) </font></td>
+<td cellpadding="0" border="0" valign="bottom"><font color="#444443" point-size="9">&rarr;</font></td><td port="5" cellspacing="0" cellpadding="1" bgcolor="#fefecd" border="0" align="left"><font color="#444443" point-size="11"> 1</font></td>
+</tr>
+<tr><td colspan="3" cellpadding="1" border="0" bgcolor="#fefecd"></td></tr><tr><td port="6_label" cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="0" align="right"><font face="Helvetica" color="#444443" point-size="11">(8, 0) </font></td>
+<td cellpadding="0" border="0" valign="bottom"><font color="#444443" point-size="9">&rarr;</font></td><td port="6" cellspacing="0" cellpadding="1" bgcolor="#fefecd" border="0" align="left"><font color="#444443" point-size="11"> 1</font></td>
+</tr>
+<tr><td colspan="3" cellpadding="1" border="0" bgcolor="#fefecd"></td></tr><tr><td port="7_label" cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="0" align="right"><font face="Helvetica" color="#444443" point-size="11">(7, 1) </font></td>
+<td cellpadding="0" border="0" valign="bottom"><font color="#444443" point-size="9">&rarr;</font></td><td port="7" cellspacing="0" cellpadding="1" bgcolor="#fefecd" border="0" align="left"><font color="#444443" point-size="11"> 2</font></td>
+</tr>
+<tr><td colspan="3" cellpadding="1" border="0" bgcolor="#fefecd"></td></tr><tr><td port="8_label" cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="0" align="right"><font face="Helvetica" color="#444443" point-size="11">(6, 2) </font></td>
+<td cellpadding="0" border="0" valign="bottom"><font color="#444443" point-size="9">&rarr;</font></td><td port="8" cellspacing="0" cellpadding="1" bgcolor="#fefecd" border="0" align="left"><font color="#444443" point-size="11"> 1</font></td>
+</tr>
+<tr><td colspan="3" cellpadding="1" border="0" bgcolor="#fefecd"></td></tr><tr><td port="9_label" cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="0" align="right"><font face="Helvetica" color="#444443" point-size="11">(5, 3) </font></td>
+<td cellpadding="0" border="0" valign="bottom"><font color="#444443" point-size="9">&rarr;</font></td><td port="9" cellspacing="0" cellpadding="1" bgcolor="#fefecd" border="0" align="left"><font color="#444443" point-size="11"> 2</font></td>
+</tr>
+<tr><td colspan="3" cellpadding="1" border="0" bgcolor="#fefecd"></td></tr><tr><td port="10_label" cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="0" align="right"><font face="Helvetica" color="#444443" point-size="11">(4, 4) </font></td>
+<td cellpadding="0" border="0" valign="bottom"><font color="#444443" point-size="9">&rarr;</font></td><td port="10" cellspacing="0" cellpadding="1" bgcolor="#fefecd" border="0" align="left"><font color="#444443" point-size="11"> 3</font></td>
+</tr>
+<tr><td colspan="3" cellpadding="1" border="0" bgcolor="#fefecd"></td></tr><tr><td port="11_label" cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="0" align="right"><font face="Helvetica" color="#444443" point-size="11">(3, 5) </font></td>
+<td cellpadding="0" border="0" valign="bottom"><font color="#444443" point-size="9">&rarr;</font></td><td port="11" cellspacing="0" cellpadding="1" bgcolor="#fefecd" border="0" align="left"><font color="#444443" point-size="11"> 1</font></td>
+</tr>
+<tr><td colspan="3" cellpadding="1" border="0" bgcolor="#fefecd"></td></tr><tr><td port="12_label" cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="0" align="right"><font face="Helvetica" color="#444443" point-size="11">(2, 6) </font></td>
+<td cellpadding="0" border="0" valign="bottom"><font color="#444443" point-size="9">&rarr;</font></td><td port="12" cellspacing="0" cellpadding="1" bgcolor="#fefecd" border="0" align="left"><font color="#444443" point-size="11"> 1</font></td>
+</tr>
+<tr><td colspan="3" cellpadding="1" border="0" bgcolor="#fefecd"></td></tr><tr><td port="13_label" cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="0" align="right"><font face="Helvetica" color="#444443" point-size="11">(1, 7) </font></td>
+<td cellpadding="0" border="0" valign="bottom"><font color="#444443" point-size="9">&rarr;</font></td><td port="13" cellspacing="0" cellpadding="1" bgcolor="#fefecd" border="0" align="left"><font color="#444443" point-size="11"> 1</font></td>
+</tr>
+<tr><td colspan="3" cellpadding="1" border="0" bgcolor="#fefecd"></td></tr><tr><td port="14_label" cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="0" align="right"><font face="Helvetica" color="#444443" point-size="11">(0, 8) </font></td>
+<td cellpadding="0" border="0" valign="bottom"><font color="#444443" point-size="9">&rarr;</font></td><td port="14" cellspacing="0" cellpadding="1" bgcolor="#fefecd" border="0" align="left"><font color="#444443" point-size="11"> 1</font></td>
+</tr>
+<tr><td colspan="3" cellpadding="1" border="0" bgcolor="#fefecd"></td></tr><tr><td port="15_label" cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="0" align="right"><font face="Helvetica" color="#444443" point-size="11">(9, 4) </font></td>
+<td cellpadding="0" border="0" valign="bottom"><font color="#444443" point-size="9">&rarr;</font></td><td port="15" cellspacing="0" cellpadding="1" bgcolor="#fefecd" border="0" align="left"><font color="#444443" point-size="11"> 1</font></td>
+</tr>
+<tr><td colspan="3" cellpadding="1" border="0" bgcolor="#fefecd"></td></tr><tr><td port="16_label" cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="0" align="right"><font face="Helvetica" color="#444443" point-size="11">(8, 4) </font></td>
+<td cellpadding="0" border="0" valign="bottom"><font color="#444443" point-size="9">&rarr;</font></td><td port="16" cellspacing="0" cellpadding="1" bgcolor="#fefecd" border="0" align="left"><font color="#444443" point-size="11"> 1</font></td>
+</tr>
+<tr><td colspan="3" cellpadding="1" border="0" bgcolor="#fefecd"></td></tr><tr><td port="17_label" cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="0" align="right"><font face="Helvetica" color="#444443" point-size="11">(7, 4) </font></td>
+<td cellpadding="0" border="0" valign="bottom"><font color="#444443" point-size="9">&rarr;</font></td><td port="17" cellspacing="0" cellpadding="1" bgcolor="#fefecd" border="0" align="left"><font color="#444443" point-size="11"> 2</font></td>
+</tr>
+<tr><td colspan="3" cellpadding="1" border="0" bgcolor="#fefecd"></td></tr><tr><td port="18_label" cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="0" align="right"><font face="Helvetica" color="#444443" point-size="11">(6, 4) </font></td>
+<td cellpadding="0" border="0" valign="bottom"><font color="#444443" point-size="9">&rarr;</font></td><td port="18" cellspacing="0" cellpadding="1" bgcolor="#fefecd" border="0" align="left"><font color="#444443" point-size="11"> 3</font></td>
+</tr>
+<tr><td colspan="3" cellpadding="1" border="0" bgcolor="#fefecd"></td></tr><tr><td port="19_label" cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="0" align="right"><font face="Helvetica" color="#444443" point-size="11">(5, 4) </font></td>
+<td cellpadding="0" border="0" valign="bottom"><font color="#444443" point-size="9">&rarr;</font></td><td port="19" cellspacing="0" cellpadding="1" bgcolor="#fefecd" border="0" align="left"><font color="#444443" point-size="11"> 1</font></td>
+</tr>
+<tr><td colspan="3" cellpadding="1" border="0" bgcolor="#fefecd"></td></tr><tr><td port="20_label" cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="0" align="right"><font face="Helvetica" color="#444443" point-size="11">(3, 4) </font></td>
+<td cellpadding="0" border="0" valign="bottom"><font color="#444443" point-size="9">&rarr;</font></td><td port="20" cellspacing="0" cellpadding="1" bgcolor="#fefecd" border="0" align="left"><font color="#444443" point-size="11"> 2</font></td>
+</tr>
+<tr><td colspan="3" cellpadding="1" border="0" bgcolor="#fefecd"></td></tr><tr><td port="21_label" cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="0" align="right"><font face="Helvetica" color="#444443" point-size="11">(2, 2) </font></td>
+<td cellpadding="0" border="0" valign="bottom"><font color="#444443" point-size="9">&rarr;</font></td><td port="21" cellspacing="0" cellpadding="1" bgcolor="#fefecd" border="0" align="left"><font color="#444443" point-size="11"> 2</font></td>
+</tr>
+<tr><td colspan="3" cellpadding="1" border="0" bgcolor="#fefecd"></td></tr><tr><td port="22_label" cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="0" align="right"><font face="Helvetica" color="#444443" point-size="11">(2, 1) </font></td>
+<td cellpadding="0" border="0" valign="bottom"><font color="#444443" point-size="9">&rarr;</font></td><td port="22" cellspacing="0" cellpadding="1" bgcolor="#fefecd" border="0" align="left"><font color="#444443" point-size="11"> 1</font></td>
+</tr>
+<tr><td colspan="3" cellpadding="1" border="0" bgcolor="#fefecd"></td></tr><tr><td port="23_label" cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="0" align="right"><font face="Helvetica" color="#444443" point-size="11">(7, 0) </font></td>
+<td cellpadding="0" border="0" valign="bottom"><font color="#444443" point-size="9">&rarr;</font></td><td port="23" cellspacing="0" cellpadding="1" bgcolor="#fefecd" border="0" align="left"><font color="#444443" point-size="11"> 1</font></td>
+</tr>
+<tr><td colspan="3" cellpadding="1" border="0" bgcolor="#fefecd"></td></tr><tr><td port="24_label" cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="0" align="right"><font face="Helvetica" color="#444443" point-size="11">(7, 2) </font></td>
+<td cellpadding="0" border="0" valign="bottom"><font color="#444443" point-size="9">&rarr;</font></td><td port="24" cellspacing="0" cellpadding="1" bgcolor="#fefecd" border="0" align="left"><font color="#444443" point-size="11"> 1</font></td>
+</tr>
+<tr><td colspan="3" cellpadding="1" border="0" bgcolor="#fefecd"></td></tr><tr><td port="25_label" cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="0" align="right"><font face="Helvetica" color="#444443" point-size="11">(7, 3) </font></td>
+<td cellpadding="0" border="0" valign="bottom"><font color="#444443" point-size="9">&rarr;</font></td><td port="25" cellspacing="0" cellpadding="1" bgcolor="#fefecd" border="0" align="left"><font color="#444443" point-size="11"> 2</font></td>
+</tr>
+<tr><td colspan="3" cellpadding="1" border="0" bgcolor="#fefecd"></td></tr><tr><td port="26_label" cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="0" align="right"><font face="Helvetica" color="#444443" point-size="11">(4, 2) </font></td>
+<td cellpadding="0" border="0" valign="bottom"><font color="#444443" point-size="9">&rarr;</font></td><td port="26" cellspacing="0" cellpadding="1" bgcolor="#fefecd" border="0" align="left"><font color="#444443" point-size="11"> 1</font></td>
+</tr>
+<tr><td colspan="3" cellpadding="1" border="0" bgcolor="#fefecd"></td></tr><tr><td port="27_label" cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="0" align="right"><font face="Helvetica" color="#444443" point-size="11">(3, 1) </font></td>
+<td cellpadding="0" border="0" valign="bottom"><font color="#444443" point-size="9">&rarr;</font></td><td port="27" cellspacing="0" cellpadding="1" bgcolor="#fefecd" border="0" align="left"><font color="#444443" point-size="11"> 1</font></td>
+</tr>
+<tr><td colspan="3" cellpadding="1" border="0" bgcolor="#fefecd"></td></tr><tr><td port="28_label" cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="0" align="right"><font face="Helvetica" color="#444443" point-size="11">(2, 0) </font></td>
+<td cellpadding="0" border="0" valign="bottom"><font color="#444443" point-size="9">&rarr;</font></td><td port="28" cellspacing="0" cellpadding="1" bgcolor="#fefecd" border="0" align="left"><font color="#444443" point-size="11"> 1</font></td>
+</tr>
+<tr><td colspan="3" cellpadding="1" border="0" bgcolor="#fefecd"></td></tr><tr><td port="29_label" cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="0" align="right"><font face="Helvetica" color="#444443" point-size="11">(2, 4) </font></td>
+<td cellpadding="0" border="0" valign="bottom"><font color="#444443" point-size="9">&rarr;</font></td><td port="29" cellspacing="0" cellpadding="1" bgcolor="#fefecd" border="0" align="left"><font color="#444443" point-size="11"> 1</font></td>
+</tr>
+<tr><td colspan="3" cellpadding="1" border="0" bgcolor="#fefecd"></td></tr><tr><td port="30_label" cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="0" align="right"><font face="Helvetica" color="#444443" point-size="11">(1, 4) </font></td>
+<td cellpadding="0" border="0" valign="bottom"><font color="#444443" point-size="9">&rarr;</font></td><td port="30" cellspacing="0" cellpadding="1" bgcolor="#fefecd" border="0" align="left"><font color="#444443" point-size="11"> 1</font></td>
+</tr>
+<tr><td colspan="3" cellpadding="1" border="0" bgcolor="#fefecd"></td></tr><tr><td port="31_label" cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="0" align="right"><font face="Helvetica" color="#444443" point-size="11">(0, 0) </font></td>
+<td cellpadding="0" border="0" valign="bottom"><font color="#444443" point-size="9">&rarr;</font></td><td port="31" cellspacing="0" cellpadding="1" bgcolor="#fefecd" border="0" align="left"><font color="#444443" point-size="11"> 1</font></td>
+</tr>
+<tr><td colspan="3" cellpadding="1" border="0" bgcolor="#fefecd"></td></tr><tr><td port="32_label" cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="0" align="right"><font face="Helvetica" color="#444443" point-size="11">(1, 1) </font></td>
+<td cellpadding="0" border="0" valign="bottom"><font color="#444443" point-size="9">&rarr;</font></td><td port="32" cellspacing="0" cellpadding="1" bgcolor="#fefecd" border="0" align="left"><font color="#444443" point-size="11"> 1</font></td>
+</tr>
+<tr><td colspan="3" cellpadding="1" border="0" bgcolor="#fefecd"></td></tr><tr><td port="33_label" cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="0" align="right"><font face="Helvetica" color="#444443" point-size="11">(3, 3) </font></td>
+<td cellpadding="0" border="0" valign="bottom"><font color="#444443" point-size="9">&rarr;</font></td><td port="33" cellspacing="0" cellpadding="1" bgcolor="#fefecd" border="0" align="left"><font color="#444443" point-size="11"> 1</font></td>
+</tr>
+<tr><td colspan="3" cellpadding="1" border="0" bgcolor="#fefecd"></td></tr><tr><td port="34_label" cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="0" align="right"><font face="Helvetica" color="#444443" point-size="11">(5, 5) </font></td>
+<td cellpadding="0" border="0" valign="bottom"><font color="#444443" point-size="9">&rarr;</font></td><td port="34" cellspacing="0" cellpadding="1" bgcolor="#fefecd" border="0" align="left"><font color="#444443" point-size="11"> 2</font></td>
+</tr>
+<tr><td colspan="3" cellpadding="1" border="0" bgcolor="#fefecd"></td></tr><tr><td port="35_label" cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="0" align="right"><font face="Helvetica" color="#444443" point-size="11">(6, 6) </font></td>
+<td cellpadding="0" border="0" valign="bottom"><font color="#444443" point-size="9">&rarr;</font></td><td port="35" cellspacing="0" cellpadding="1" bgcolor="#fefecd" border="0" align="left"><font color="#444443" point-size="11"> 1</font></td>
+</tr>
+<tr><td colspan="3" cellpadding="1" border="0" bgcolor="#fefecd"></td></tr><tr><td port="36_label" cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="0" align="right"><font face="Helvetica" color="#444443" point-size="11">(7, 7) </font></td>
+<td cellpadding="0" border="0" valign="bottom"><font color="#444443" point-size="9">&rarr;</font></td><td port="36" cellspacing="0" cellpadding="1" bgcolor="#fefecd" border="0" align="left"><font color="#444443" point-size="11"> 1</font></td>
+</tr>
+<tr><td colspan="3" cellpadding="1" border="0" bgcolor="#fefecd"></td></tr><tr><td port="37_label" cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="0" align="right"><font face="Helvetica" color="#444443" point-size="11">(8, 8) </font></td>
+<td cellpadding="0" border="0" valign="bottom"><font color="#444443" point-size="9">&rarr;</font></td><td port="37" cellspacing="0" cellpadding="1" bgcolor="#fefecd" border="0" align="left"><font color="#444443" point-size="11"> 1</font></td>
+</tr>
+<tr><td colspan="3" cellpadding="1" border="0" bgcolor="#fefecd"></td></tr><tr><td port="38_label" cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="0" align="right"><font face="Helvetica" color="#444443" point-size="11">(8, 2) </font></td>
+<td cellpadding="0" border="0" valign="bottom"><font color="#444443" point-size="9">&rarr;</font></td><td port="38" cellspacing="0" cellpadding="1" bgcolor="#fefecd" border="0" align="left"><font color="#444443" point-size="11"> 1</font></td>
+</tr>
+</table>
+>];
+// LIST or ITERATABLE of atoms
+node140091867044040 [shape="box", space="0.0", margin="0.01", fontcolor="#444443", fontname="Helvetica", label=<<table BORDER="0" CELLBORDER="0" CELLSPACING="0">
+<tr>
+<td cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="1" sides="br" valign="top"><font color="#444443" point-size="9">0</font></td>
+<td cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="1" sides="b" valign="top"><font color="#444443" point-size="9">1</font></td>
+</tr>
+<tr>
+<td port="0" bgcolor="#fefecd" border="1" sides="r" align="center"><font point-size="11">0</font></td>
+<td port="1" bgcolor="#fefecd" border="0" align="center"><font point-size="11">9</font></td>
+</tr></table>
+>];
+// LIST or ITERATABLE of atoms
+node140091867044064 [shape="box", space="0.0", margin="0.01", fontcolor="#444443", fontname="Helvetica", label=<<table BORDER="0" CELLBORDER="0" CELLSPACING="0">
+<tr>
+<td cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="1" sides="br" valign="top"><font color="#444443" point-size="9">0</font></td>
+<td cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="1" sides="b" valign="top"><font color="#444443" point-size="9">1</font></td>
+</tr>
+<tr>
+<td port="0" bgcolor="#fefecd" border="1" sides="r" align="center"><font point-size="11">1</font></td>
+<td port="1" bgcolor="#fefecd" border="0" align="center"><font point-size="11">9</font></td>
+</tr></table>
+>];
+// LIST or ITERATABLE of atoms
+node140091867044088 [shape="box", space="0.0", margin="0.01", fontcolor="#444443", fontname="Helvetica", label=<<table BORDER="0" CELLBORDER="0" CELLSPACING="0">
+<tr>
+<td cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="1" sides="br" valign="top"><font color="#444443" point-size="9">0</font></td>
+<td cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="1" sides="b" valign="top"><font color="#444443" point-size="9">1</font></td>
+</tr>
+<tr>
+<td port="0" bgcolor="#fefecd" border="1" sides="r" align="center"><font point-size="11">2</font></td>
+<td port="1" bgcolor="#fefecd" border="0" align="center"><font point-size="11">9</font></td>
+</tr></table>
+>];
+// LIST or ITERATABLE of atoms
+node140091867044112 [shape="box", space="0.0", margin="0.01", fontcolor="#444443", fontname="Helvetica", label=<<table BORDER="0" CELLBORDER="0" CELLSPACING="0">
+<tr>
+<td cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="1" sides="br" valign="top"><font color="#444443" point-size="9">0</font></td>
+<td cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="1" sides="b" valign="top"><font color="#444443" point-size="9">1</font></td>
+</tr>
+<tr>
+<td port="0" bgcolor="#fefecd" border="1" sides="r" align="center"><font point-size="11">3</font></td>
+<td port="1" bgcolor="#fefecd" border="0" align="center"><font point-size="11">9</font></td>
+</tr></table>
+>];
+// LIST or ITERATABLE of atoms
+node140091867044136 [shape="box", space="0.0", margin="0.01", fontcolor="#444443", fontname="Helvetica", label=<<table BORDER="0" CELLBORDER="0" CELLSPACING="0">
+<tr>
+<td cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="1" sides="br" valign="top"><font color="#444443" point-size="9">0</font></td>
+<td cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="1" sides="b" valign="top"><font color="#444443" point-size="9">1</font></td>
+</tr>
+<tr>
+<td port="0" bgcolor="#fefecd" border="1" sides="r" align="center"><font point-size="11">4</font></td>
+<td port="1" bgcolor="#fefecd" border="0" align="center"><font point-size="11">9</font></td>
+</tr></table>
+>];
+// LIST or ITERATABLE of atoms
+node140091867044160 [shape="box", space="0.0", margin="0.01", fontcolor="#444443", fontname="Helvetica", label=<<table BORDER="0" CELLBORDER="0" CELLSPACING="0">
+<tr>
+<td cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="1" sides="br" valign="top"><font color="#444443" point-size="9">0</font></td>
+<td cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="1" sides="b" valign="top"><font color="#444443" point-size="9">1</font></td>
+</tr>
+<tr>
+<td port="0" bgcolor="#fefecd" border="1" sides="r" align="center"><font point-size="11">5</font></td>
+<td port="1" bgcolor="#fefecd" border="0" align="center"><font point-size="11">9</font></td>
+</tr></table>
+>];
+// LIST or ITERATABLE of atoms
+node140091867044184 [shape="box", space="0.0", margin="0.01", fontcolor="#444443", fontname="Helvetica", label=<<table BORDER="0" CELLBORDER="0" CELLSPACING="0">
+<tr>
+<td cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="1" sides="br" valign="top"><font color="#444443" point-size="9">0</font></td>
+<td cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="1" sides="b" valign="top"><font color="#444443" point-size="9">1</font></td>
+</tr>
+<tr>
+<td port="0" bgcolor="#fefecd" border="1" sides="r" align="center"><font point-size="11">8</font></td>
+<td port="1" bgcolor="#fefecd" border="0" align="center"><font point-size="11">0</font></td>
+</tr></table>
+>];
+// LIST or ITERATABLE of atoms
+node140091867044208 [shape="box", space="0.0", margin="0.01", fontcolor="#444443", fontname="Helvetica", label=<<table BORDER="0" CELLBORDER="0" CELLSPACING="0">
+<tr>
+<td cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="1" sides="br" valign="top"><font color="#444443" point-size="9">0</font></td>
+<td cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="1" sides="b" valign="top"><font color="#444443" point-size="9">1</font></td>
+</tr>
+<tr>
+<td port="0" bgcolor="#fefecd" border="1" sides="r" align="center"><font point-size="11">7</font></td>
+<td port="1" bgcolor="#fefecd" border="0" align="center"><font point-size="11">1</font></td>
+</tr></table>
+>];
+// LIST or ITERATABLE of atoms
+node140091867044232 [shape="box", space="0.0", margin="0.01", fontcolor="#444443", fontname="Helvetica", label=<<table BORDER="0" CELLBORDER="0" CELLSPACING="0">
+<tr>
+<td cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="1" sides="br" valign="top"><font color="#444443" point-size="9">0</font></td>
+<td cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="1" sides="b" valign="top"><font color="#444443" point-size="9">1</font></td>
+</tr>
+<tr>
+<td port="0" bgcolor="#fefecd" border="1" sides="r" align="center"><font point-size="11">6</font></td>
+<td port="1" bgcolor="#fefecd" border="0" align="center"><font point-size="11">2</font></td>
+</tr></table>
+>];
+// LIST or ITERATABLE of atoms
+node140091867044256 [shape="box", space="0.0", margin="0.01", fontcolor="#444443", fontname="Helvetica", label=<<table BORDER="0" CELLBORDER="0" CELLSPACING="0">
+<tr>
+<td cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="1" sides="br" valign="top"><font color="#444443" point-size="9">0</font></td>
+<td cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="1" sides="b" valign="top"><font color="#444443" point-size="9">1</font></td>
+</tr>
+<tr>
+<td port="0" bgcolor="#fefecd" border="1" sides="r" align="center"><font point-size="11">5</font></td>
+<td port="1" bgcolor="#fefecd" border="0" align="center"><font point-size="11">3</font></td>
+</tr></table>
+>];
+// LIST or ITERATABLE of atoms
+node140091867044280 [shape="box", space="0.0", margin="0.01", fontcolor="#444443", fontname="Helvetica", label=<<table BORDER="0" CELLBORDER="0" CELLSPACING="0">
+<tr>
+<td cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="1" sides="br" valign="top"><font color="#444443" point-size="9">0</font></td>
+<td cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="1" sides="b" valign="top"><font color="#444443" point-size="9">1</font></td>
+</tr>
+<tr>
+<td port="0" bgcolor="#fefecd" border="1" sides="r" align="center"><font point-size="11">4</font></td>
+<td port="1" bgcolor="#fefecd" border="0" align="center"><font point-size="11">4</font></td>
+</tr></table>
+>];
+// LIST or ITERATABLE of atoms
+node140091867044304 [shape="box", space="0.0", margin="0.01", fontcolor="#444443", fontname="Helvetica", label=<<table BORDER="0" CELLBORDER="0" CELLSPACING="0">
+<tr>
+<td cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="1" sides="br" valign="top"><font color="#444443" point-size="9">0</font></td>
+<td cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="1" sides="b" valign="top"><font color="#444443" point-size="9">1</font></td>
+</tr>
+<tr>
+<td port="0" bgcolor="#fefecd" border="1" sides="r" align="center"><font point-size="11">3</font></td>
+<td port="1" bgcolor="#fefecd" border="0" align="center"><font point-size="11">5</font></td>
+</tr></table>
+>];
+// LIST or ITERATABLE of atoms
+node140091867044328 [shape="box", space="0.0", margin="0.01", fontcolor="#444443", fontname="Helvetica", label=<<table BORDER="0" CELLBORDER="0" CELLSPACING="0">
+<tr>
+<td cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="1" sides="br" valign="top"><font color="#444443" point-size="9">0</font></td>
+<td cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="1" sides="b" valign="top"><font color="#444443" point-size="9">1</font></td>
+</tr>
+<tr>
+<td port="0" bgcolor="#fefecd" border="1" sides="r" align="center"><font point-size="11">2</font></td>
+<td port="1" bgcolor="#fefecd" border="0" align="center"><font point-size="11">6</font></td>
+</tr></table>
+>];
+// LIST or ITERATABLE of atoms
+node140091867044352 [shape="box", space="0.0", margin="0.01", fontcolor="#444443", fontname="Helvetica", label=<<table BORDER="0" CELLBORDER="0" CELLSPACING="0">
+<tr>
+<td cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="1" sides="br" valign="top"><font color="#444443" point-size="9">0</font></td>
+<td cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="1" sides="b" valign="top"><font color="#444443" point-size="9">1</font></td>
+</tr>
+<tr>
+<td port="0" bgcolor="#fefecd" border="1" sides="r" align="center"><font point-size="11">1</font></td>
+<td port="1" bgcolor="#fefecd" border="0" align="center"><font point-size="11">7</font></td>
+</tr></table>
+>];
+// LIST or ITERATABLE of atoms
+node140091867044376 [shape="box", space="0.0", margin="0.01", fontcolor="#444443", fontname="Helvetica", label=<<table BORDER="0" CELLBORDER="0" CELLSPACING="0">
+<tr>
+<td cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="1" sides="br" valign="top"><font color="#444443" point-size="9">0</font></td>
+<td cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="1" sides="b" valign="top"><font color="#444443" point-size="9">1</font></td>
+</tr>
+<tr>
+<td port="0" bgcolor="#fefecd" border="1" sides="r" align="center"><font point-size="11">0</font></td>
+<td port="1" bgcolor="#fefecd" border="0" align="center"><font point-size="11">8</font></td>
+</tr></table>
+>];
+// LIST or ITERATABLE of atoms
+node140091867044400 [shape="box", space="0.0", margin="0.01", fontcolor="#444443", fontname="Helvetica", label=<<table BORDER="0" CELLBORDER="0" CELLSPACING="0">
+<tr>
+<td cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="1" sides="br" valign="top"><font color="#444443" point-size="9">0</font></td>
+<td cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="1" sides="b" valign="top"><font color="#444443" point-size="9">1</font></td>
+</tr>
+<tr>
+<td port="0" bgcolor="#fefecd" border="1" sides="r" align="center"><font point-size="11">9</font></td>
+<td port="1" bgcolor="#fefecd" border="0" align="center"><font point-size="11">4</font></td>
+</tr></table>
+>];
+// LIST or ITERATABLE of atoms
+node140091867044424 [shape="box", space="0.0", margin="0.01", fontcolor="#444443", fontname="Helvetica", label=<<table BORDER="0" CELLBORDER="0" CELLSPACING="0">
+<tr>
+<td cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="1" sides="br" valign="top"><font color="#444443" point-size="9">0</font></td>
+<td cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="1" sides="b" valign="top"><font color="#444443" point-size="9">1</font></td>
+</tr>
+<tr>
+<td port="0" bgcolor="#fefecd" border="1" sides="r" align="center"><font point-size="11">8</font></td>
+<td port="1" bgcolor="#fefecd" border="0" align="center"><font point-size="11">4</font></td>
+</tr></table>
+>];
+// LIST or ITERATABLE of atoms
+node140091867044448 [shape="box", space="0.0", margin="0.01", fontcolor="#444443", fontname="Helvetica", label=<<table BORDER="0" CELLBORDER="0" CELLSPACING="0">
+<tr>
+<td cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="1" sides="br" valign="top"><font color="#444443" point-size="9">0</font></td>
+<td cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="1" sides="b" valign="top"><font color="#444443" point-size="9">1</font></td>
+</tr>
+<tr>
+<td port="0" bgcolor="#fefecd" border="1" sides="r" align="center"><font point-size="11">7</font></td>
+<td port="1" bgcolor="#fefecd" border="0" align="center"><font point-size="11">4</font></td>
+</tr></table>
+>];
+// LIST or ITERATABLE of atoms
+node140091867044472 [shape="box", space="0.0", margin="0.01", fontcolor="#444443", fontname="Helvetica", label=<<table BORDER="0" CELLBORDER="0" CELLSPACING="0">
+<tr>
+<td cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="1" sides="br" valign="top"><font color="#444443" point-size="9">0</font></td>
+<td cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="1" sides="b" valign="top"><font color="#444443" point-size="9">1</font></td>
+</tr>
+<tr>
+<td port="0" bgcolor="#fefecd" border="1" sides="r" align="center"><font point-size="11">6</font></td>
+<td port="1" bgcolor="#fefecd" border="0" align="center"><font point-size="11">4</font></td>
+</tr></table>
+>];
+// LIST or ITERATABLE of atoms
+node140091867044496 [shape="box", space="0.0", margin="0.01", fontcolor="#444443", fontname="Helvetica", label=<<table BORDER="0" CELLBORDER="0" CELLSPACING="0">
+<tr>
+<td cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="1" sides="br" valign="top"><font color="#444443" point-size="9">0</font></td>
+<td cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="1" sides="b" valign="top"><font color="#444443" point-size="9">1</font></td>
+</tr>
+<tr>
+<td port="0" bgcolor="#fefecd" border="1" sides="r" align="center"><font point-size="11">5</font></td>
+<td port="1" bgcolor="#fefecd" border="0" align="center"><font point-size="11">4</font></td>
+</tr></table>
+>];
+// LIST or ITERATABLE of atoms
+node140091867044520 [shape="box", space="0.0", margin="0.01", fontcolor="#444443", fontname="Helvetica", label=<<table BORDER="0" CELLBORDER="0" CELLSPACING="0">
+<tr>
+<td cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="1" sides="br" valign="top"><font color="#444443" point-size="9">0</font></td>
+<td cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="1" sides="b" valign="top"><font color="#444443" point-size="9">1</font></td>
+</tr>
+<tr>
+<td port="0" bgcolor="#fefecd" border="1" sides="r" align="center"><font point-size="11">3</font></td>
+<td port="1" bgcolor="#fefecd" border="0" align="center"><font point-size="11">4</font></td>
+</tr></table>
+>];
+// LIST or ITERATABLE of atoms
+node140091867044544 [shape="box", space="0.0", margin="0.01", fontcolor="#444443", fontname="Helvetica", label=<<table BORDER="0" CELLBORDER="0" CELLSPACING="0">
+<tr>
+<td cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="1" sides="br" valign="top"><font color="#444443" point-size="9">0</font></td>
+<td cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="1" sides="b" valign="top"><font color="#444443" point-size="9">1</font></td>
+</tr>
+<tr>
+<td port="0" bgcolor="#fefecd" border="1" sides="r" align="center"><font point-size="11">2</font></td>
+<td port="1" bgcolor="#fefecd" border="0" align="center"><font point-size="11">2</font></td>
+</tr></table>
+>];
+// LIST or ITERATABLE of atoms
+node140091867044568 [shape="box", space="0.0", margin="0.01", fontcolor="#444443", fontname="Helvetica", label=<<table BORDER="0" CELLBORDER="0" CELLSPACING="0">
+<tr>
+<td cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="1" sides="br" valign="top"><font color="#444443" point-size="9">0</font></td>
+<td cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="1" sides="b" valign="top"><font color="#444443" point-size="9">1</font></td>
+</tr>
+<tr>
+<td port="0" bgcolor="#fefecd" border="1" sides="r" align="center"><font point-size="11">2</font></td>
+<td port="1" bgcolor="#fefecd" border="0" align="center"><font point-size="11">1</font></td>
+</tr></table>
+>];
+// LIST or ITERATABLE of atoms
+node140091867044592 [shape="box", space="0.0", margin="0.01", fontcolor="#444443", fontname="Helvetica", label=<<table BORDER="0" CELLBORDER="0" CELLSPACING="0">
+<tr>
+<td cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="1" sides="br" valign="top"><font color="#444443" point-size="9">0</font></td>
+<td cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="1" sides="b" valign="top"><font color="#444443" point-size="9">1</font></td>
+</tr>
+<tr>
+<td port="0" bgcolor="#fefecd" border="1" sides="r" align="center"><font point-size="11">7</font></td>
+<td port="1" bgcolor="#fefecd" border="0" align="center"><font point-size="11">0</font></td>
+</tr></table>
+>];
+// LIST or ITERATABLE of atoms
+node140091867044616 [shape="box", space="0.0", margin="0.01", fontcolor="#444443", fontname="Helvetica", label=<<table BORDER="0" CELLBORDER="0" CELLSPACING="0">
+<tr>
+<td cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="1" sides="br" valign="top"><font color="#444443" point-size="9">0</font></td>
+<td cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="1" sides="b" valign="top"><font color="#444443" point-size="9">1</font></td>
+</tr>
+<tr>
+<td port="0" bgcolor="#fefecd" border="1" sides="r" align="center"><font point-size="11">7</font></td>
+<td port="1" bgcolor="#fefecd" border="0" align="center"><font point-size="11">2</font></td>
+</tr></table>
+>];
+// LIST or ITERATABLE of atoms
+node140091867044640 [shape="box", space="0.0", margin="0.01", fontcolor="#444443", fontname="Helvetica", label=<<table BORDER="0" CELLBORDER="0" CELLSPACING="0">
+<tr>
+<td cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="1" sides="br" valign="top"><font color="#444443" point-size="9">0</font></td>
+<td cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="1" sides="b" valign="top"><font color="#444443" point-size="9">1</font></td>
+</tr>
+<tr>
+<td port="0" bgcolor="#fefecd" border="1" sides="r" align="center"><font point-size="11">7</font></td>
+<td port="1" bgcolor="#fefecd" border="0" align="center"><font point-size="11">3</font></td>
+</tr></table>
+>];
+// LIST or ITERATABLE of atoms
+node140091867044664 [shape="box", space="0.0", margin="0.01", fontcolor="#444443", fontname="Helvetica", label=<<table BORDER="0" CELLBORDER="0" CELLSPACING="0">
+<tr>
+<td cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="1" sides="br" valign="top"><font color="#444443" point-size="9">0</font></td>
+<td cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="1" sides="b" valign="top"><font color="#444443" point-size="9">1</font></td>
+</tr>
+<tr>
+<td port="0" bgcolor="#fefecd" border="1" sides="r" align="center"><font point-size="11">4</font></td>
+<td port="1" bgcolor="#fefecd" border="0" align="center"><font point-size="11">2</font></td>
+</tr></table>
+>];
+// LIST or ITERATABLE of atoms
+node140091867044688 [shape="box", space="0.0", margin="0.01", fontcolor="#444443", fontname="Helvetica", label=<<table BORDER="0" CELLBORDER="0" CELLSPACING="0">
+<tr>
+<td cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="1" sides="br" valign="top"><font color="#444443" point-size="9">0</font></td>
+<td cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="1" sides="b" valign="top"><font color="#444443" point-size="9">1</font></td>
+</tr>
+<tr>
+<td port="0" bgcolor="#fefecd" border="1" sides="r" align="center"><font point-size="11">3</font></td>
+<td port="1" bgcolor="#fefecd" border="0" align="center"><font point-size="11">1</font></td>
+</tr></table>
+>];
+// LIST or ITERATABLE of atoms
+node140091867044712 [shape="box", space="0.0", margin="0.01", fontcolor="#444443", fontname="Helvetica", label=<<table BORDER="0" CELLBORDER="0" CELLSPACING="0">
+<tr>
+<td cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="1" sides="br" valign="top"><font color="#444443" point-size="9">0</font></td>
+<td cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="1" sides="b" valign="top"><font color="#444443" point-size="9">1</font></td>
+</tr>
+<tr>
+<td port="0" bgcolor="#fefecd" border="1" sides="r" align="center"><font point-size="11">2</font></td>
+<td port="1" bgcolor="#fefecd" border="0" align="center"><font point-size="11">0</font></td>
+</tr></table>
+>];
+// LIST or ITERATABLE of atoms
+node140091867044736 [shape="box", space="0.0", margin="0.01", fontcolor="#444443", fontname="Helvetica", label=<<table BORDER="0" CELLBORDER="0" CELLSPACING="0">
+<tr>
+<td cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="1" sides="br" valign="top"><font color="#444443" point-size="9">0</font></td>
+<td cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="1" sides="b" valign="top"><font color="#444443" point-size="9">1</font></td>
+</tr>
+<tr>
+<td port="0" bgcolor="#fefecd" border="1" sides="r" align="center"><font point-size="11">2</font></td>
+<td port="1" bgcolor="#fefecd" border="0" align="center"><font point-size="11">4</font></td>
+</tr></table>
+>];
+// LIST or ITERATABLE of atoms
+node140091867044760 [shape="box", space="0.0", margin="0.01", fontcolor="#444443", fontname="Helvetica", label=<<table BORDER="0" CELLBORDER="0" CELLSPACING="0">
+<tr>
+<td cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="1" sides="br" valign="top"><font color="#444443" point-size="9">0</font></td>
+<td cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="1" sides="b" valign="top"><font color="#444443" point-size="9">1</font></td>
+</tr>
+<tr>
+<td port="0" bgcolor="#fefecd" border="1" sides="r" align="center"><font point-size="11">1</font></td>
+<td port="1" bgcolor="#fefecd" border="0" align="center"><font point-size="11">4</font></td>
+</tr></table>
+>];
+// LIST or ITERATABLE of atoms
+node140091867044784 [shape="box", space="0.0", margin="0.01", fontcolor="#444443", fontname="Helvetica", label=<<table BORDER="0" CELLBORDER="0" CELLSPACING="0">
+<tr>
+<td cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="1" sides="br" valign="top"><font color="#444443" point-size="9">0</font></td>
+<td cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="1" sides="b" valign="top"><font color="#444443" point-size="9">1</font></td>
+</tr>
+<tr>
+<td port="0" bgcolor="#fefecd" border="1" sides="r" align="center"><font point-size="11">0</font></td>
+<td port="1" bgcolor="#fefecd" border="0" align="center"><font point-size="11">0</font></td>
+</tr></table>
+>];
+// LIST or ITERATABLE of atoms
+node140091867044808 [shape="box", space="0.0", margin="0.01", fontcolor="#444443", fontname="Helvetica", label=<<table BORDER="0" CELLBORDER="0" CELLSPACING="0">
+<tr>
+<td cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="1" sides="br" valign="top"><font color="#444443" point-size="9">0</font></td>
+<td cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="1" sides="b" valign="top"><font color="#444443" point-size="9">1</font></td>
+</tr>
+<tr>
+<td port="0" bgcolor="#fefecd" border="1" sides="r" align="center"><font point-size="11">1</font></td>
+<td port="1" bgcolor="#fefecd" border="0" align="center"><font point-size="11">1</font></td>
+</tr></table>
+>];
+// LIST or ITERATABLE of atoms
+node140091867044832 [shape="box", space="0.0", margin="0.01", fontcolor="#444443", fontname="Helvetica", label=<<table BORDER="0" CELLBORDER="0" CELLSPACING="0">
+<tr>
+<td cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="1" sides="br" valign="top"><font color="#444443" point-size="9">0</font></td>
+<td cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="1" sides="b" valign="top"><font color="#444443" point-size="9">1</font></td>
+</tr>
+<tr>
+<td port="0" bgcolor="#fefecd" border="1" sides="r" align="center"><font point-size="11">3</font></td>
+<td port="1" bgcolor="#fefecd" border="0" align="center"><font point-size="11">3</font></td>
+</tr></table>
+>];
+// LIST or ITERATABLE of atoms
+node140091867044856 [shape="box", space="0.0", margin="0.01", fontcolor="#444443", fontname="Helvetica", label=<<table BORDER="0" CELLBORDER="0" CELLSPACING="0">
+<tr>
+<td cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="1" sides="br" valign="top"><font color="#444443" point-size="9">0</font></td>
+<td cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="1" sides="b" valign="top"><font color="#444443" point-size="9">1</font></td>
+</tr>
+<tr>
+<td port="0" bgcolor="#fefecd" border="1" sides="r" align="center"><font point-size="11">5</font></td>
+<td port="1" bgcolor="#fefecd" border="0" align="center"><font point-size="11">5</font></td>
+</tr></table>
+>];
+// LIST or ITERATABLE of atoms
+node140091867044880 [shape="box", space="0.0", margin="0.01", fontcolor="#444443", fontname="Helvetica", label=<<table BORDER="0" CELLBORDER="0" CELLSPACING="0">
+<tr>
+<td cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="1" sides="br" valign="top"><font color="#444443" point-size="9">0</font></td>
+<td cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="1" sides="b" valign="top"><font color="#444443" point-size="9">1</font></td>
+</tr>
+<tr>
+<td port="0" bgcolor="#fefecd" border="1" sides="r" align="center"><font point-size="11">6</font></td>
+<td port="1" bgcolor="#fefecd" border="0" align="center"><font point-size="11">6</font></td>
+</tr></table>
+>];
+// LIST or ITERATABLE of atoms
+node140091867044904 [shape="box", space="0.0", margin="0.01", fontcolor="#444443", fontname="Helvetica", label=<<table BORDER="0" CELLBORDER="0" CELLSPACING="0">
+<tr>
+<td cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="1" sides="br" valign="top"><font color="#444443" point-size="9">0</font></td>
+<td cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="1" sides="b" valign="top"><font color="#444443" point-size="9">1</font></td>
+</tr>
+<tr>
+<td port="0" bgcolor="#fefecd" border="1" sides="r" align="center"><font point-size="11">7</font></td>
+<td port="1" bgcolor="#fefecd" border="0" align="center"><font point-size="11">7</font></td>
+</tr></table>
+>];
+// LIST or ITERATABLE of atoms
+node140091867044928 [shape="box", space="0.0", margin="0.01", fontcolor="#444443", fontname="Helvetica", label=<<table BORDER="0" CELLBORDER="0" CELLSPACING="0">
+<tr>
+<td cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="1" sides="br" valign="top"><font color="#444443" point-size="9">0</font></td>
+<td cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="1" sides="b" valign="top"><font color="#444443" point-size="9">1</font></td>
+</tr>
+<tr>
+<td port="0" bgcolor="#fefecd" border="1" sides="r" align="center"><font point-size="11">8</font></td>
+<td port="1" bgcolor="#fefecd" border="0" align="center"><font point-size="11">8</font></td>
+</tr></table>
+>];
+// LIST or ITERATABLE of atoms
+node140091867044952 [shape="box", space="0.0", margin="0.01", fontcolor="#444443", fontname="Helvetica", label=<<table BORDER="0" CELLBORDER="0" CELLSPACING="0">
+<tr>
+<td cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="1" sides="br" valign="top"><font color="#444443" point-size="9">0</font></td>
+<td cellspacing="0" cellpadding="0" bgcolor="#fefecd" border="1" sides="b" valign="top"><font color="#444443" point-size="9">1</font></td>
+</tr>
+<tr>
+<td port="0" bgcolor="#fefecd" border="1" sides="r" align="center"><font point-size="11">8</font></td>
+<td port="1" bgcolor="#fefecd" border="0" align="center"><font point-size="11">2</font></td>
+</tr></table>
+>];
+node140091875499112:0 -> node140091867044040:w [arrowtail=dot, penwidth="0.5", color="#444443", arrowsize=.4, weight=100]
+node140091875499112:1 -> node140091867044064:w [arrowtail=dot, penwidth="0.5", color="#444443", arrowsize=.4, weight=100]
+node140091875499112:2 -> node140091867044088:w [arrowtail=dot, penwidth="0.5", color="#444443", arrowsize=.4, weight=100]
+node140091875499112:3 -> node140091867044112:w [arrowtail=dot, penwidth="0.5", color="#444443", arrowsize=.4, weight=100]
+node140091875499112:4 -> node140091867044136:w [arrowtail=dot, penwidth="0.5", color="#444443", arrowsize=.4, weight=100]
+node140091875499112:5 -> node140091867044160:w [arrowtail=dot, penwidth="0.5", color="#444443", arrowsize=.4, weight=100]
+node140091875499112:6 -> node140091867044184:w [arrowtail=dot, penwidth="0.5", color="#444443", arrowsize=.4, weight=100]
+node140091875499112:7 -> node140091867044208:w [arrowtail=dot, penwidth="0.5", color="#444443", arrowsize=.4, weight=100]
+node140091875499112:8 -> node140091867044232:w [arrowtail=dot, penwidth="0.5", color="#444443", arrowsize=.4, weight=100]
+node140091875499112:9 -> node140091867044256:w [arrowtail=dot, penwidth="0.5", color="#444443", arrowsize=.4, weight=100]
+node140091875499112:10 -> node140091867044280:w [arrowtail=dot, penwidth="0.5", color="#444443", arrowsize=.4, weight=100]
+node140091875499112:11 -> node140091867044304:w [arrowtail=dot, penwidth="0.5", color="#444443", arrowsize=.4, weight=100]
+node140091875499112:12 -> node140091867044328:w [arrowtail=dot, penwidth="0.5", color="#444443", arrowsize=.4, weight=100]
+node140091875499112:13 -> node140091867044352:w [arrowtail=dot, penwidth="0.5", color="#444443", arrowsize=.4, weight=100]
+node140091875499112:14 -> node140091867044376:w [arrowtail=dot, penwidth="0.5", color="#444443", arrowsize=.4, weight=100]
+node140091875499112:15 -> node140091867044400:w [arrowtail=dot, penwidth="0.5", color="#444443", arrowsize=.4, weight=100]
+node140091875499112:16 -> node140091867044424:w [arrowtail=dot, penwidth="0.5", color="#444443", arrowsize=.4, weight=100]
+node140091875499112:17 -> node140091867044448:w [arrowtail=dot, penwidth="0.5", color="#444443", arrowsize=.4, weight=100]
+node140091875499112:18 -> node140091867044472:w [arrowtail=dot, penwidth="0.5", color="#444443", arrowsize=.4, weight=100]
+node140091875499112:19 -> node140091867044496:w [arrowtail=dot, penwidth="0.5", color="#444443", arrowsize=.4, weight=100]
+node140091875499112:20 -> node140091867044520:w [arrowtail=dot, penwidth="0.5", color="#444443", arrowsize=.4, weight=100]
+node140091875499112:21 -> node140091867044544:w [arrowtail=dot, penwidth="0.5", color="#444443", arrowsize=.4, weight=100]
+node140091875499112:22 -> node140091867044568:w [arrowtail=dot, penwidth="0.5", color="#444443", arrowsize=.4, weight=100]
+node140091875499112:23 -> node140091867044592:w [arrowtail=dot, penwidth="0.5", color="#444443", arrowsize=.4, weight=100]
+node140091875499112:24 -> node140091867044616:w [arrowtail=dot, penwidth="0.5", color="#444443", arrowsize=.4, weight=100]
+node140091875499112:25 -> node140091867044640:w [arrowtail=dot, penwidth="0.5", color="#444443", arrowsize=.4, weight=100]
+node140091875499112:26 -> node140091867044664:w [arrowtail=dot, penwidth="0.5", color="#444443", arrowsize=.4, weight=100]
+node140091875499112:27 -> node140091867044688:w [arrowtail=dot, penwidth="0.5", color="#444443", arrowsize=.4, weight=100]
+node140091875499112:28 -> node140091867044712:w [arrowtail=dot, penwidth="0.5", color="#444443", arrowsize=.4, weight=100]
+node140091875499112:29 -> node140091867044736:w [arrowtail=dot, penwidth="0.5", color="#444443", arrowsize=.4, weight=100]
+node140091875499112:30 -> node140091867044760:w [arrowtail=dot, penwidth="0.5", color="#444443", arrowsize=.4, weight=100]
+node140091875499112:31 -> node140091867044784:w [arrowtail=dot, penwidth="0.5", color="#444443", arrowsize=.4, weight=100]
+node140091875499112:32 -> node140091867044808:w [arrowtail=dot, penwidth="0.5", color="#444443", arrowsize=.4, weight=100]
+node140091875499112:33 -> node140091867044832:w [arrowtail=dot, penwidth="0.5", color="#444443", arrowsize=.4, weight=100]
+node140091875499112:34 -> node140091867044856:w [arrowtail=dot, penwidth="0.5", color="#444443", arrowsize=.4, weight=100]
+node140091875499112:35 -> node140091867044880:w [arrowtail=dot, penwidth="0.5", color="#444443", arrowsize=.4, weight=100]
+node140091875499112:36 -> node140091867044904:w [arrowtail=dot, penwidth="0.5", color="#444443", arrowsize=.4, weight=100]
+node140091875499112:37 -> node140091867044928:w [arrowtail=dot, penwidth="0.5", color="#444443", arrowsize=.4, weight=100]
+node140091875499112:38 -> node140091867044952:w [arrowtail=dot, penwidth="0.5", color="#444443", arrowsize=.4, weight=100]
+node140091868239792:G:c -> node140091875499112 [dir=both, tailclip=false, arrowtail=dot, penwidth="0.5", color="#444443", arrowsize=.4]
+}

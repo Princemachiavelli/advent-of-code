@@ -3,7 +3,7 @@
 import re
 import sys
 import time
-from lolviz import *
+import statistics
 from typing import List, Match, Optional
 from copy import copy, deepcopy
 from collections import defaultdict
@@ -12,10 +12,12 @@ from functools import partial
 from advent import sirange, srange, nddict
 import pprint
 import math
+from astar import * 
 if type(__builtins__) is not dict or 'profile' not in __builtins__: profile=lambda f:f;
+sys.setrecursionlimit(10000000)
 
 
-ADVENTDAY="05"
+ADVENTDAY="11"
 test = False
 debug = False
 stdin = False
@@ -28,7 +30,6 @@ for arg in sys.argv:
         debug = True
     if arg == "--stdin":
         stdin = True
-
 
 # Utilities
 def rematch(pattern: str, s: str) -> Optional[Match]:
@@ -65,56 +66,57 @@ input_end = time.time()
 ########################################################################################
 print("Part 1:")
 
+C = 0
+def flash(M, k):
+    global C
+    C += 1
+    for r1,c1 in [(-1,-1),(-1,0),(0,-1),(+1,+1),(+1,0),(0,+1),(+1,-1),(-1,+1)]:
+        rn = r1+k[0]
+        cn = c1+k[1]
+        if (rn,cn) in M.keys():
+            M[(rn,cn)] += 1
+            if M[(rn,cn)] == 10:
+                M=flash(M, (rn,cn))
+    return M
+
 @profile
 def part1() -> int:
-    global pp
-    G = defaultdict(int)
-    for l in lines:
-        s,e = l.split('->')
-        x1,y1 = map(int,s.split(','))
-        x2,y2 = map(int,e.split(','))
-        xm = 1 if x2 >= x1 else -1
-        ym = 1 if y2 >= y1 else -1
-        if x1 == x2 or y1 == y2: 
-            for x in sirange(x1, x2):
-                for y in sirange(y1, y2):
-                    G[(x,y)] += 1
-    O = 0
-    for v in [y for y in G.values() if y > 1]:
-        O += 1
-    return O
+    global ADVENTDAY, test, pp, C
+    M = defaultdict(int)
+    T = 0
+    S = []
+    for r, line in enumerate(lines):
+        for c,l in enumerate(line):
+            M[(r,c)] = int(l)
+    print(M)
+
+    for x in range(10000):
+        C = 0
+        print(f"Step {x+1}")
+        for k,v in copy(M).items():
+            M[k] += 1
+        for k,v in copy(M).items():
+            if v == 10:
+                M = flash(M, k)
+        for k,v in copy(M).items():
+            if v > 9:
+                M[k] = 0
+        print(M.values())
+        if len(M) == C:
+            print("All flashed in {x+1}")
+            return x+1
+    return None 
 
 print(part1())
 
-@profile
-def part2():
-    global ADVENTDAY, test, pp
-    G = defaultdict(int)
-    for l in lines:
-        s,e = [map(int,x.split(',')) for x in l.split('->')]
-        x1,y1 = s
-        x2,y2 = e
-        if test:
-            pp(locals())
-        if x1 == x2 or y1 == y2: 
-            for x in sirange(x1, x2):
-                for y in sirange(y1, y2):
-                    G[(x,y)] += 1
-        else:
-            # Assumes 45 degree slope?
-            # python 3.10 added a strict parameter to check
-            for x,y in zip(sirange(x1,x2),sirange(y1,y2)):
-                G[(x,y)] += 1
-    return len([y for y in G.values() if y > 1])
+
+#@profile
+#def part2():
+#    return 0 
+
 
 print("Part 2:")
-print(part2())
-
-
-
-
-
-
+#print(part2())
 
 
 

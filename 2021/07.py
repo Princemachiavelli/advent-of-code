@@ -3,7 +3,8 @@
 import re
 import sys
 import time
-from lolviz import *
+import statistics
+import numpy as np
 from typing import List, Match, Optional
 from copy import copy, deepcopy
 from collections import defaultdict
@@ -13,9 +14,10 @@ from advent import sirange, srange, nddict
 import pprint
 import math
 if type(__builtins__) is not dict or 'profile' not in __builtins__: profile=lambda f:f;
+sys.setrecursionlimit(10000000)
 
 
-ADVENTDAY="05"
+ADVENTDAY="07"
 test = False
 debug = False
 stdin = False
@@ -28,7 +30,6 @@ for arg in sys.argv:
         debug = True
     if arg == "--stdin":
         stdin = True
-
 
 # Utilities
 def rematch(pattern: str, s: str) -> Optional[Match]:
@@ -65,56 +66,70 @@ input_end = time.time()
 ########################################################################################
 print("Part 1:")
 
-@profile
+def cost(x,y):
+    return sum(range(1,abs(x-y)+1))
+
+def l2(x: list, p: int = 2):
+    return sum(abs(y)**p for y in x)**(1/p)
+
+def pm(x: list):
+    return 1/len(x)*sum(x)
+
+
+# [1, 4, 9]
 def part1() -> int:
-    global pp
+    global ADVENTDAY, test, pp
+    C = sorted([int(x) for x in lines[0].split(',')])
+    #M = statistics.(C)
     G = defaultdict(int)
-    for l in lines:
-        s,e = l.split('->')
-        x1,y1 = map(int,s.split(','))
-        x2,y2 = map(int,e.split(','))
-        xm = 1 if x2 >= x1 else -1
-        ym = 1 if y2 >= y1 else -1
-        if x1 == x2 or y1 == y2: 
-            for x in sirange(x1, x2):
-                for y in sirange(y1, y2):
-                    G[(x,y)] += 1
-    O = 0
-    for v in [y for y in G.values() if y > 1]:
-        O += 1
-    return O
+    for c in range(0,max(C)): 
+        minCost = None
+        minPos = C[0]
+        for x in C:
+            cc = cost(x,c)
+            G[c] += cc
+    mostMin = None
+    least = min(G.values())
+    for k,v in G.items():
+        if v == least:
+            mostMin = k
+    T = 0
+    for c in C:
+        T += cost(c, mostMin)
+    print(f"l2 = {l2(C,4)}")
+    print(np.mean(C))
+    print(sum(C)/len(C))
+    print(f"mostMin = {mostMin}")
+    return T
 
 print(part1())
 
+D = defaultdict(int)
+
+@profile
+def c(f: int, d: int):
+    global D
+    if (f,d) in D:
+        return D[(f,d)]
+    if f > d or d == 0:
+        D[(f,d)] = 1
+        return 1
+    if f == 0:
+        D[(f,d)] = c(0, d - 7) + c(0, d - 9)
+        return D[(f,d)]
+    else:
+        n = min(f,d)
+        s = c(f-n,d-n)
+        D[(f-n,d-n)] = s
+        return s
+
 @profile
 def part2():
-    global ADVENTDAY, test, pp
-    G = defaultdict(int)
-    for l in lines:
-        s,e = [map(int,x.split(',')) for x in l.split('->')]
-        x1,y1 = s
-        x2,y2 = e
-        if test:
-            pp(locals())
-        if x1 == x2 or y1 == y2: 
-            for x in sirange(x1, x2):
-                for y in sirange(y1, y2):
-                    G[(x,y)] += 1
-        else:
-            # Assumes 45 degree slope?
-            # python 3.10 added a strict parameter to check
-            for x,y in zip(sirange(x1,x2),sirange(y1,y2)):
-                G[(x,y)] += 1
-    return len([y for y in G.values() if y > 1])
+    return 0 
+
 
 print("Part 2:")
-print(part2())
-
-
-
-
-
-
+#print(part2())
 
 
 
