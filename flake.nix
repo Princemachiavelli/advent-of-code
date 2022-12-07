@@ -1,7 +1,7 @@
 {
     description = "Advent of Code Shell for NixOS";
     inputs = {
-      nixpkgs.url = "github:Princemachiavelli/nixpkgs/nixos-unstable";
+      nixpkgs.url = "github:Princemachiavelli/nixpkgs/unstable-good";
       flake-utils.url = "github:numtide/flake-utils";
     };
 

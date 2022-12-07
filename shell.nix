@@ -1,18 +1,19 @@
-{ pkgs, ... }: with pkgs;
+{ pkgs ? import <nixpkgs> }: with pkgs;
 
 let
-  py3WithPackages = python3.withPackages (
+  #py3WithPackages = pypy3.withPackages (
+  py3WithPackages = python310.withPackages (
     ps: with ps; [
-      black
-      flake8
-      graphviz
-      pynvim
-      line_profiler
-      snakeviz
-      lolviz
-      sympy
-      scipy
-      numpy
+      #black
+      #flake8
+      #graphviz
+      #pynvim
+      #line_profiler
+      #snakeviz
+      #lolviz
+      #sympy
+      #scipy
+      #numpy
     ]
   );
 
@@ -66,7 +67,7 @@ let
   runScript = writeShellScriptBin "run" ''
     ${getDayScriptPart "run"}
 
-    ${watchexec}/bin/watchexec -r "${pypy3}/bin/pypy3 ./$day.py"
+    ${watchexec}/bin/watchexec -r "${py3WithPackages}/bin/python3 ./$day.py"
   '';
   
   profileScript = writeShellScriptBin "prun" ''
@@ -78,26 +79,26 @@ let
   debugRunScript = writeShellScriptBin "drun" ''
     ${getDayScriptPart "drun"}
 
-    ${watchexec}/bin/watchexec -r "${pypy3}/bin/pypy3 ./$day.py --debug"
+    ${watchexec}/bin/watchexec -r "${py3WithPackages}/bin/python3 ./$day.py --debug"
   '';
   
   testRunScript = writeShellScriptBin "trun" ''
     ${getDayScriptPart "trun"}
 
-    ${watchexec}/bin/watchexec -r "${pypy3}/bin/pypy3 ./$day.py --test"
+    ${watchexec}/bin/watchexec -r "${py3WithPackages}/bin/python3 ./$day.py --test"
   '';
 
   # Single run, don't watchexec
   singleRunScript = writeShellScriptBin "srun" ''
     ${getDayScriptPart "srun"}
 
-    ${pypy3}/bin/pypy3 ./$day.py
+    ${py3WithPackages}/bin/python3 ./$day.py
   '';
 
   debugSingleRunScript = writeShellScriptBin "dsrun" ''
     ${getDayScriptPart "dsrun"}
 
-    ${pypy3}/bin/pypy3 ./$day.py --debug
+    ${py3WithPackages}/bin/python3 ./$day.py --debug
   '';
 
   # Write a test file
@@ -109,24 +110,24 @@ let
   # Run with --notest flag
   runNoTestScript = writeShellScriptBin "rntest" ''
     ${getDayScriptPart "rntest"}
-    ${pypy3}/bin/pypy3 ./$day.py --notest
+    ${py3WithPackages}/bin/python3 ./$day.py --notest
   '';
 
   debugRunNoTestScript = writeShellScriptBin "drntest" ''
     ${getDayScriptPart "druntest"}
-    ${pypy3}/bin/pypy3 ./$day.py --notest --debug
+    ${py3WithPackages}/bin/python3 ./$day.py --notest --debug
   '';
 
   # Run with --stdin and --notest flags
   runStdinScript = writeShellScriptBin "runstdin" ''
     ${getDayScriptPart "runstdin"}
-    ${pypy3}/bin/pypy3 ./$day.py --stdin --notest
+    ${py3WithPackages}/bin/python3 ./$day.py --stdin --notest
   '';
 
   # Run with --stdin and --notest flags, and pull from clipboard.
   runStdinClipScript = writeShellScriptBin "runstdinclip" ''
     ${getDayScriptPart "runstdin"}
-    ${wl-clipboard}/bin/wl-paste | ${pypy3}/bin/pypy3 ./$day.py --stdin --notest
+    ${wl-clipboard}/bin/wl-paste | ${py3WithPackages}/bin/python3 ./$day.py --stdin --notest
   '';
 
   # Compile and run the C version.
@@ -180,24 +181,23 @@ mkShell {
     tokei
 
     # C/C++
-    clang
-    gcc
-    gdb
-    valgrind
+    #clang
+    #gcc
+    #gdb
+    #valgrind
 
     # OCaml
     ocaml
     ocamlformat
-    ocamlPackages.ocaml-lsp
-    ocamlPackages.ocaml_extlib
+    ocamlPackages.lsp
+    ocamlPackages.extlib
     ocamlPackages.utop
 
     # Python
     py3WithPackages
-    py3WithPackages.pkgs.black
-    py3WithPackages.pkgs.flake8
-    py3WithPackages.pkgs.line_profiler
-    pypy3
+    #py3WithPackages.pkgs.black
+    #py3WithPackages.pkgs.flake8
+    #py3WithPackages.pkgs.line_profiler
 
     # Utilities
     cRunScript
