@@ -9,3 +9,4 @@ doi
 
 pkgs/_sources/.shake*
 .session_token
+.vim/coc-settings.json

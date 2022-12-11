@@ -1,19 +1,19 @@
-{ pkgs ? import <nixpkgs> }: with pkgs;
+{ pkgs }: with pkgs;
 
 let
   #py3WithPackages = pypy3.withPackages (
   py3WithPackages = python310.withPackages (
     ps: with ps; [
-      #black
-      #flake8
-      #graphviz
-      #pynvim
-      #line_profiler
-      #snakeviz
-      #lolviz
-      #sympy
-      #scipy
-      #numpy
+      black
+      flake8
+      graphviz
+      pynvim
+      line_profiler
+      snakeviz
+      lolviz
+      sympy
+      scipy
+      numpy
     ]
   );
 
@@ -195,9 +195,9 @@ mkShell {
 
     # Python
     py3WithPackages
-    #py3WithPackages.pkgs.black
-    #py3WithPackages.pkgs.flake8
-    #py3WithPackages.pkgs.line_profiler
+    py3WithPackages.pkgs.black
+    py3WithPackages.pkgs.flake8
+    py3WithPackages.pkgs.line_profiler
 
     # Utilities
     cRunScript

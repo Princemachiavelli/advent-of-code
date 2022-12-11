@@ -17,11 +17,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1670308947,
-        "narHash": "sha256-JOrwvszDExZnJLMN7jd0V9CyZzbrTJ31+zPcKCvUIO4=",
+        "lastModified": 1670594650,
+        "narHash": "sha256-07As8JIiWAt5xanlu2dPSNNaJ/wcXdisOM5ucIUtiyo=",
         "owner": "Princemachiavelli",
         "repo": "nixpkgs",
-        "rev": "3571a1fc8d8cba4a8f0de9640987944942b5d021",
+        "rev": "9adaa3fd0aa0b8d97e8c85875e65c10063efdc07",
         "type": "github"
       },
       "original": {
