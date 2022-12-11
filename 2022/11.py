@@ -121,10 +121,7 @@ def part1():
         pt = sympy.isprime(x['test'])
         print(f"{x['test']} prime test is {pt}")
         L.append(x['test'])
-    print(L)
     dv = math.lcm(*L)
-    print(dv)
-    return dv
     for ri in range(1,10000+1):
         print(f"Round {ri}")
         for mk in M:
